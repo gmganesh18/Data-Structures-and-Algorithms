@@ -9,6 +9,7 @@ vector<int>TwoSum(vector<int>&array,int n,int target){
         int targetReq=target-curr;
         if(mp.find(targetReq)!=mp.end()){
             return {mp[targetReq],i};
+            // this is a comment
         }
         mp[array[i]]=i;
     }
