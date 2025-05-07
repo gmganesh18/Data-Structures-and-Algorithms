@@ -5,6 +5,9 @@ class Teacher{
 private:
     double salary;
 public:
+    Teacher(){//creating our own constructor. If we didnt create constructor means c++ khud create its own constructor for creting object.... Constructor is created at the starting stage of invoking object
+        cout<<"Hi, i am coustom constrctor"<<endl;//no return for constructor 
+    }
     string name;
     string deprt;
     string subject;
@@ -38,7 +41,7 @@ public:
 
 
 int main(){
-    Teacher t1;
+    Teacher t1;//here constructor invoved
     t1.name="Ganesh";
     t1.deprt="ECE";
     t1.setSalary(25000);
