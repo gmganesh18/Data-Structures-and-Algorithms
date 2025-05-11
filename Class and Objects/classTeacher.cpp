@@ -38,15 +38,38 @@ public:
     string Accountname;
 };
 
+class Student{
+public:
+    string name;
+    string usn;
+    int rollno;
+    double* percentage;
+    
+    Student(){
+        cout<<"hey i am from student constructor";
+    }
+    Student(string name,string usn,int rollno,double percentage){
+        this->name=name;
+        this->usn=usn;
+        this->rollno=rollno;
 
+    }
+    void getInfo(){
+        cout<<"Name" <<name<<endl;
+        cout<<"USN" <<usn<<endl;
+        cout<<"RollNo" <<rollno<<endl;
+    }
+};
 
 int main(){
-    Teacher t1;//here constructor invoved
-    t1.name="Ganesh";
-    t1.deprt="ECE";
-    t1.setSalary(25000);
-    t1.subject="VLSI";
-    cout<<t1.name;
-    cout<<t1.deprt;
-    cout<<t1.getSalary()<<endl;
+    // Teacher t1;//here constructor invoved
+    // t1.name="Ganesh";
+    // t1.deprt="ECE";
+    // t1.setSalary(25000);
+    // t1.subject="VLSI";
+    // cout<<t1.name;
+    // cout<<t1.deprt;
+    // cout<<t1.getSalary()<<endl;
+    Student S1("Ganesh","1CR22EC072" ,72);
+    S1.getInfo();
 }
