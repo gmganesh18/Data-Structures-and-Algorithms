@@ -23,3 +23,7 @@ int main(){
     int result=knapsack(wt,val,W,n);
     cout<<result;
 }
+
+
+
+
