@@ -6,8 +6,8 @@
 #include<climits>
 using namespace std;
 int main(){
-    string str="abadcefabncc";
-    // string str="adobecodebanc";
+    // string str="abadcefabncc";
+    string str="adobecodebanc";
     string t="abc";
     unordered_map<char,int>map;
     for(int i=0;i<t.length();i++){
@@ -31,7 +31,8 @@ int main(){
             else{
                 val=false;
             }
-            st.insert(temp);
+            string temp2=temp;
+            st.insert(temp2);
             if(count>=t.length() && st.size()>=map.size() && val==true){
                 if(mini<j-i+1){
                     result=temp;
